@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnighty Studio - Transformando ideias em mundos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        .stars {
+            background: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-[#1a237e] via-[#00bcd4] to-[#1a237e] min-h-screen text-white">
+    <canvas id="starsCanvas" class="stars"></canvas>
+    
+    <nav class="fixed w-full z-50 px-6 py-4 bg-black bg-opacity-10 backdrop-filter backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MSIcon-VbzFEpaTxvuwAXklTW7EBlMo4jdlMt.png" alt="Logo" class="w-12 h-12 transition-transform duration-300 hover:scale-110">
+            
+            <div class="flex items-center gap-8">
+                <a href="#studio" class="text-white hover:text-cyan-400 transition-colors duration-300 relative group">
+                    O studio
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#jogos" class="text-white hover:text-cyan-400 transition-colors duration-300 relative group">
+                    Jogos
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#sobre" class="text-white hover:text-cyan-400 transition-colors duration-300 relative group">
+                    Sobre nós
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contato" class="text-white hover:text-cyan-400 transition-colors duration-300 relative group">
+                    Contato
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+        </div>
+    </nav>
+
+    <main class="min-h-screen flex flex-col items-center justify-center relative">
+        <div class="text-center">
+            <img src="mid.png"Midnighty Studio Logo" class="w-[600px] max-w-full mx-auto float-animation">
+            
+            <h2 class="text-white text-xl tracking-[0.2em] font-light mt-8 fade-in">
+                TRANSFORMANDO IDEIAS EM MUNDOS
+            </h2>
+        </div>
+    </main>
+
+    <section id="studio" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">O Studio</h2>
+            <p class="text-lg mb-8">
+                Fundado em 2020 e entrando na ativa em 2021, desde seu primeiro projeto sempre almejou como objetivo entregar a maior imersão e padrão de qualidade possível, trabalhando em projetos ambiciosos, desde projetos próprios como também projetos envolvendo parcerias. Com anos de experiência e colaboração, seus desenvolvedores buscam trazer o melhor nível artístico que um jogo possa ter mesmo sendo uma equipe pequena.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-lightbulb text-4xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Inovação</h3>
+                    <p>Buscamos constantemente novas ideias e tecnologias para criar jogos únicos.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-users text-4xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Colaboração</h3>
+                    <p>Trabalhamos em equipe para dar vida às nossas visões criativas.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-rocket text-4xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Excelência</h3>
+                    <p>Comprometidos com a qualidade em cada detalhe dos nossos jogos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sessão de Jogos com Carrossel -->
+<section id="jogos" class="py-20 px-6 bg-black bg-opacity-30">
+    <div id="carousel-container" class="relative overflow-hidden w-full bg-gray-900 text-white">
+        <div id="carousel" class="flex transition-transform duration-500">
+            <div class="w-full flex-shrink-0 text-center p-4">
+                <img class="w-full h-auto max-h-80 object-contain rounded-lg shadow-lg" src="pudimland2.webp" alt="Imagem do Jogo 1" />
+                <a href="https://www.roblox.com/pt/games/7508759663/SALE-Pudimland-Chalet#!/about" target="_blank">
+                    <img src="pudimlandchalet.png" alt="Game 1 Logo" class="w-32 h-16 mx-auto mt-4 rounded-lg shadow-lg">
+                </a>
+                <p class="mt-2 text-gray-300">Em parceria com o influenciador Ileo0x, PudimLand leva você a um mundo virtual realista dentro do Roblox.
+                     Explore um chalé acolhedor e complete tarefas para mantê-lo de pé. Com mais de 150 mil visitas e 2900 likes,
+                     PudimLand tem se destacado como um dos favoritos da comunidade, proporcionando uma experiência incrível para os jogadores.</p>
+            </div>
+            <div class="w-full flex-shrink-0 text-center p-4">
+                <img class="w-full h-auto max-h-80 object-contain rounded-lg shadow-lg" src="suburb2.webp" alt="Imagem do Jogo 2" />
+                <a href="https://www.roblox.com/pt/games/18237993699/Suburb-RP" target="_blank">
+                    <img src="suburbrp.png" alt="Game 2 Logo" class="w-32 h-16 mx-auto mt-4 rounded-lg shadow-lg">
+                </a>
+                <p class="mt-2 text-gray-300">Suburb RP, um projeto criado especialmente para o influenciador IBugou, é a porta de entrada para um 
+                    universo onde as possibilidades são ilimitadas. Inspirado em cenários brasileiros, este mundo virtual oferece a experiência única 
+                    de construir sua vida de forma simples e envolvente. O sucesso do jogo é comprovado pelos mais de 130 mil acessos, 
+                    consolidando Suburb RP como um fenômeno entre os jogadores.</p>
+            </div>
+            <div class="w-full flex-shrink-0 text-center p-4">
+                <img class="w-full h-auto max-h-80 object-contain rounded-lg shadow-lg" src="scientist2.webp" alt="Imagem do Jogo 3" />
+                <a href="https://www.roblox.com/pt/games/16560256979/WORLD-2-Scientist-Simulator" target="_blank">
+                    <img src="scientist simulator.png" alt="Game 3 Logo" class="w-32 h-16 mx-auto mt-4 rounded-lg shadow-lg">
+                </a>
+                <p class="mt-2 text-gray-300">Scientist Simulator é um projeto em parceria com o influenciador DPSpedro. No jogo, você assume o papel de
+                     um cientista e o objetivo é montar a melhor unidade possível usando partes de diversos personagens. 
+                     À medida que você evolui, vai desbloqueando novas áreas e enfrentando inimigos. Explore um universo, experimente diferentes 
+                     combinações e veja até onde sua criatividade pode te levar.</p>
+            </div>
+            <div class="w-full flex-shrink-0 text-center p-4">
+                <img class="w-full h-auto max-h-80 object-contain rounded-lg shadow-lg" src="ghetto2.webp" alt="Imagem do Jogo 4" />
+                <a href="https://www.roblox.com/pt/games/9872239875/Updating-Ghetto" target="_blank">
+                    <img src="ghetto.png" alt="Game 4 Logo" class="w-32 h-16 mx-auto mt-4 rounded-lg shadow-lg">
+                </a>
+                <p class="mt-2 text-gray-300">O Ghetto é um projeto independente do Midnighty, que busca trazer uma experiência imersiva em uma cidade 
+                    controlada por gangues. Para sobreviver nesse ambiente hostil, o jogador precisará desenvolver habilidades de sobrevivência, 
+                    formar grupos, e juntar dinheiro para conseguir equipamentos e veículos cada vez melhores.</p>
+            </div>
+        </div>
+        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            &#10094;
+        </button>
+        <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            &#10095;
+        </button>
+    </div>
+</section>
+
+    <section id="sobre" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Sobre Nós</h2>
+            <p class="text-lg mb-12">
+                Fundada em 2020, a Midnighty Studio nasceu da paixão de um grupo de desenvolvedores e artistas por criar mundos virtuais extraordinários. 
+                Nossa missão é levar aos jogadores experiências únicas e memoráveis através de jogos inovadores e cativantes.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <div class="flex items-center space-x-6">
+                    <img src="luis.jpeg" alt="Membro 1" class="w-48 h-48 rounded-full object-cover">
+                    <div>
+                        <h3 class="text-xl font-semibold">Luís Henrique</h3>
+                        <p class="text-white-400">Modelador 3D com mais de 4 anos de experiência, especializado em realismo e sempre em busca de novos desafios. Possui também habilidades em game design, o que permite transformar ideias criativas em experiências imersivas. Cursando Engenharia de Software.
+                            <br>
+                            <a href="https://donnk3d.artstation.com/" target="_blank" class="text-white-400 hover:underline font-bold">Portfólio pessoal</a>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="flex items-center space-x-6">
+                    <img src="nicolas.jpg" alt="Membro 2" class="w-48 h-48 rounded-full object-cover">
+                    <div>
+                        <h3 class="text-xl font-semibold">Nicolas</h3>
+                        <p class="text-white-400">Programador desde 2019 e animador desde 2021, envolvido em projetos bastante diversos desde projetos voltados ao público infantil até projetos semi/realistas, buscando sempre surpreender com qualidade e detalhes. Cursando Engenharia de Software.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Nossa Visão</h3>
+                    <p>Ser reconhecidos como um estúdio de jogos independente líder, conhecido por criar experiências de jogo inovadoras e inesquecíveis.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Nossos Valores</h3>
+                    <ul class="list-disc list-inside text-left">
+                        <li>Criatividade sem limites</li>
+                        <li>Excelência técnica</li>
+                        <li>Foco no jogador</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Aprendizado contínuo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato" class="text-white py-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-6">
+                <a href="https://discord.com/invite/seu-link" target="_blank">
+                    <img src="discord.png" alt="Logo do Discord" class="w-16 h-16 mx-auto">
+                </a>
+            </div>
+            <a href="https://discord.com/invite/seu-link" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full text-lg font-bold hover:bg-blue-700 transition duration-300">
+                Clique para entrar em nossa comunidade
+            </a>
+            <p class="mt-4 text-lg">
+                <a href="mailto:midnightystudio@gmail.com" class="text-blue-400 hover:underline">midnightystudio@gmail.com</a>
+            </p>
+        </div>
+    </section>
+    
+
+    <footer class="bg-black bg-opacity-50 py-8 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center">
+                <img src="logo.png" alt="Logo do Discord" class="w-12 h-12 rounded-full hover:opacity-80 transition-opacity duration-300">
+            </div>
+            <div class="mb-4 text-center md:text-left">
+                <p class="text-white text-sm">© 2019 Midnighty Studio. Todos os direitos reservados. Desenvolvido por <strong> Bernardo Alves </strong>
+            </div>
+        </div>
+
+        <div class="flex justify-center space-x-8 mt-6">
+            <a href="https://www.instagram.com/bernardoalvesc_/" target="_blank" class="text-white hover:text-blue-500">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/bernardoalvesdev/" target="_blank" class="text-white hover:text-blue-500">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/bernardoalvesc" target="_blank" class="text-white hover:text-blue-500">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
