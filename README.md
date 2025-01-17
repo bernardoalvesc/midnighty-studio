@@ -7,7 +7,6 @@ Este é um projeto do site do Midnighty Studio, um studio independente de game d
 
 - Sobre
 - Tecnologias Utilizadas
-- Estrutura do Projeto
 - Funcionalidades
 - Contato
 
