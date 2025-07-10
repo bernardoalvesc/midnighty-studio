@@ -1,43 +1,77 @@
 # 🌙 Midnighty Studio
 
-Este é um projeto do site do Midnighty Studio, um studio independente de game dev.
----
-
-## 📋 Índice
-
-- Sobre
-- Tecnologias Utilizadas
-- Funcionalidades
-- Contato
+Site institucional desenvolvido para o Midnighty Studio, utilizando HTML, TailwindCSS e JavaScript puro. O objetivo é apresentar portfólio, serviços e informações de contato com um layout moderno, leve e responsivo.
 
 ---
 
-## 🧐 Sobre
+## 📦 Tecnologias utilizadas
 
-O objetivo deste projeto é demonstrar habilidades na criação de interfaces responsivas utilizando o framework TailwindCSS. A landing page apresenta informações sobre o estúdio de design fictício "Midnighty Studio", incluindo serviços oferecidos, portfólio e informações de contato.
+### Frontend
+
+- **HTML5**: estrutura base do site
+- **TailwindCSS**: framework utilitário CSS que facilita a criação de layouts rápidos e responsivos
+- **JavaScript ES6+**: para interações leves e funcionalidades dinâmicas
+
+### Deploy & Versionamento
+
+- **GitHub Pages** ou **Vercel**: para hospedar o site estático
+- **GitHub**: versionamento do projeto
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🗂️ Estrutura do projeto
 
-- **Linguagens:** HTML, CSS
-- **Frameworks:** TailwindCSS
+```
+midnighty-studio/
+├── index.html
+├── script.js
+├── images/
+│   └── 
+└── README.md
+```
 
 ---
 
-## ✅ Funcionalidades
+## ⚙️ Como rodar localmente
 
-- Design responsivo, garantindo uma experiência otimizada em diferentes dispositivos.
-- Seção de serviços destacando as principais áreas de atuação do estúdio.
-- Galeria de portfólio com exemplos de trabalhos fictícios.
-- Formulário de contato integrado para facilitar a comunicação com visitantes.
-- Rodapé com links para redes sociais.
+### 🧪 Pré-requisitos
+
+- Navegador moderno (Chrome, Firefox, Edge, etc.)
+
+---
+
+### ▶️ Executando o projeto
+
+```bash
+# Basta abrir o arquivo index.html no navegador
+```
+
+Ou use um servidor local simples para testar:
+
+```bash
+npx serve
+```
+
+---
+
+## 🧠 Decisões de arquitetura
+
+- **HTML + TailwindCSS**: combinação que garante sites rápidos e responsivos sem depender de frameworks JS pesados
+- **JavaScript puro**: utilizado apenas para pequenas interações, mantendo o site leve
+- **Estrutura simples e modular**: fácil de manter e evoluir
+
+---
+
+## 📄 Licença
+
+Projeto desenvolvido por Bernardo Alves. Livre para fins educacionais.
 
 ---
 
 ## 👤 Contato
+
 Sinta-se à vontade para entrar em contato comigo:
 
-- **LinkedIn:** linkedin.com/in/bernardoalvesdev
+- **LinkedIn:** [linkedin.com/in/bernardoalvesdev](https://linkedin.com/in/bernardoalvesdev)
 - **E-mail:** bernardoalvesdev@gmail.com
-- **Portfólio:** https://www.bernardoalvesdev.com.br
+- **Portfólio:** [https://www.bernardoalvesdev.com.br](https://www.bernardoalvesdev.com.br)
